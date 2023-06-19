@@ -37,14 +37,18 @@ const EmailForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" className='email-input' value={senderName} onChange={(e) => setSenderName(e.target.value)} placeholder="Your Name" />
-            <input type="email" className='email-input' value={senderEmail} onChange={(e) => setSenderEmail(e.target.value)} placeholder="Your Email" />
-            <input type="email" className='email-input' value={recipientEmail} onChange={(e) => setRecipientEmail(e.target.value)} placeholder="Recipient's Email" />
-            <input type="text" className='email-input' value={subject} onChange={(e) => setSubject(e.target.value)} placeholder="Subject" />
-            <textarea className='textarea' value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Write you Message" />
-            <button type="submit" className='btn'>Send Email</button>
-        </form>
+        <div className='formdiv animate__animated animate__fadeIn'>
+            {/* <h2>Give Your Information to get better service</h2> */}
+            <form onSubmit={handleSubmit}>
+
+                <input type="text" required className='email-input' value={senderName} onChange={(e) => setSenderName(e.target.value)} placeholder="Your Name" />
+                <input type="email" required className='email-input' value={senderEmail} onChange={(e) => setSenderEmail(e.target.value)} placeholder="Your Email" />
+                <input type="email" className='recipt-input' value={recipientEmail} onChange={(e) => setRecipientEmail(e.target.value)} placeholder="Recipient's Email" />
+                <input type="text" required className='subject-input' value={subject} onChange={(e) => setSubject(e.target.value)} placeholder="Subject" />
+                <textarea className='textarea' value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Write you Message" />
+                <button type="submit" className='btn'>Send Email</button>
+            </form>
+        </div>
     );
 };
 

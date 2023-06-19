@@ -1,0 +1,68 @@
+.about-page {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+
+.about h1 {
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+.about-tag {
+    ::before {
+        content: '<h1>';
+        font-family: 'Courier New', Courier, monospace;
+        font-size: small;
+    }
+
+    ::after {
+        content: '</h1>';
+        font-family: 'Courier New', Courier, monospace;
+        font-size: small;
+    }
+}
+
+.about p {
+    color: white;
+    width: 45%;
+}
+
+.about-des {
+    height: 60px;
+}
+
+@media screen and (max-width:820px) {
+    .about-des {
+        p {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .about-page {
+        left: 0;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .about-page {
+        margin-left: 7%;
+        padding: 1rem;
+        position: relative;
+        top: 0;
+
+        .about-des {
+            p {
+                width: 90%;
+            }
+        }
+
+    }
+
+
+
+}

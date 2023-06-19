@@ -1,43 +1,26 @@
 .image-container {
+    display: none;
     z-index: 0;
     width: 350px;
     height: 350px;
     position: relative;
-    top: 0;
-    right: 8%;
+    top: 19vw;
+    right: -20%;
     bottom: 0;
     left: auto;
     margin: auto;
 }
 
-// .solid-logo {
-//     position: absolute;
-//     top: auto;
-//     right: auto;
-//     bottom: auto;
-//     left: 0;
-//     margin: auto;
-//     width: 100%;
-//     opacity: 1;
-//     transform: rotate(20deg);
-//     z-index: 1;
-// }
-
 .rotation-image {
+    box-shadow: 4px 4px 12px black;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: rotate 3s linear;
-    // box-shadow: 4px 4px 15px gray;
 }
 
-@keyframes rotate {
-    0% {
-        transform: translate(-50%, -50%) rotate(90deg);
-    }
-
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
+@media screen and (min-width:1120px) {
+    .image-container {
+        display: block;
     }
 }

@@ -17,10 +17,16 @@ const Home = () => {
                     <br />
                     web developer
                 </h1>
-                <h2 className='animate__animated animate__fadeIn animate__delay-1s animate__backwards'>Frontend Developer /JavaScrift Expart</h2>
-                <Link to='/contact' className='animate__animated animate__fadeIn flat-button animate__delay-1s animate__backwards'>CONTACT ME</Link>
-            </div>
+                <div className='home-h2'>
+                    <h2 className='animate__animated animate__fadeIn animate__delay-1s animate__backwards'>Frontend Developer /JavaScrift Expart</h2>
 
+                </div>
+                <Link to='/contact' className='animate__animated animate__fadeIn flat-button animate__delay-1s animate__backwards link'>CONTACT ME</Link>
+            </div>
+            <div className='img-div'>
+                <ImageAnimation />
+
+            </div>
         </div>
     )
 }

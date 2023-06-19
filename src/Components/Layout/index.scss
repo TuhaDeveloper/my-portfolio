@@ -20,44 +20,32 @@
     font-family: cursive;
 }
 
+.top-tag-html {
+    margin-left: -20px;
+    position: absolute;
+    top: 0;
+}
 
 .bottom-tag-html {
-    margin-left: -20px;
+    margin-left: -30px;
 }
 
-.container {
-    width: 100%;
-    will-change: contents;
-    height: 90%;
-    min-height: 566px;
-    position: absolute;
-    opacity: 1;
-    top: 5%;
-    margin: 0 auto;
-    z-index: 1;
-    animation-delay: 2s;
+@media screen and (max-width:540px) {
+    .nav-bar {
+        position: fixed;
+    }
+
+    .tags {
+        display: none;
+    }
 }
 
-.container {
-    opacity: 0;
-    animation-name: fade-in;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
 
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
+@media screen and (max-width:350px) {
+
+    .navbar {
+        display: block;
     }
 
-    50% {
-        opacity: 0.5;
-        transform: translateY(-10px);
-    }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }

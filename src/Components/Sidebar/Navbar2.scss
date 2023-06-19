@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    display: none;
+    margin-left: -20%;
+
+    .navlink {
+        display: flex;
+        margin: .2rem;
+
+        a {
+            margin: 0 auto;
+        }
+
+    }
+
+}
+
+@media screen and (max-width:350px) {
+
+    .navbar {
+        display: block;
+    }
+
+}

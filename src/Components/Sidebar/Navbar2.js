@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Navbar2.scss';
 import { NavLink } from 'react-router-dom';
-import { faEnvelope, faHome, faUser, } from '@fortawesome/free-solid-svg-icons'
+import { faBuilding, faEnvelope, faHome, faUser, } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar2 = () => {
 
@@ -15,6 +14,9 @@ const Navbar2 = () => {
 
                 <NavLink exact='true' className='about-link' activeclassname='active' to='/about' >
                     <FontAwesomeIcon icon={faUser} color='gray' />
+                </NavLink>
+                <NavLink exact='true' className='projects' activeclassname='active' to='/projects' >
+                    <FontAwesomeIcon icon={faBuilding} color='gray' />
                 </NavLink>
                 <NavLink exact='true' className='contact' activeclassname='active' to='/contact' >
                     <FontAwesomeIcon icon={faEnvelope} color='gray' />

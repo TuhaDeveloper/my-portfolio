@@ -7,16 +7,19 @@
   z-index: 3;
   min-height: 500px;
 }
+
 .nav-bar .logo {
   display: block;
   padding: 8px 0px;
 }
+
 .nav-bar .logo img {
   display: block;
   margin: 8px auto;
   width: 24px;
   border-radius: 10px;
 }
+
 .nav-bar .logo span {
   text-decoration: none;
   display: flex;
@@ -25,9 +28,11 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: large;
 }
+
 .nav-bar a {
   text-decoration: none;
 }
+
 .nav-bar nav {
   display: block;
   text-align: center;
@@ -37,6 +42,7 @@
   margin-top: -120px;
   width: 100%;
 }
+
 .nav-bar nav a {
   text-decoration: none;
   font-size: 22px;
@@ -45,18 +51,23 @@
   height: 51px;
   position: relative;
 }
+
 .nav-bar nav a i {
   transition: all 0.3s ease-out;
 }
+
 .nav-bar nav a:hover {
   color: yellow;
 }
+
 .nav-bar nav a:hover svg {
   opacity: 0;
 }
+
 .nav-bar nav a:hover::after {
   opacity: 1;
 }
+
 .nav-bar nav a:after {
   content: "";
   display: block;
@@ -69,12 +80,17 @@
   opacity: 0;
   transition: all 0.4s ease-out;
 }
+
 .nav-bar nav a:first-child::after {
   content: "HOME";
 }
+
 .nav-bar nav a.about-link::after {
   content: "ABOUT";
 }
+
 .nav-bar nav a.contact::after {
   content: "CONTACT";
-}/*# sourceMappingURL=navbar.css.map */
+}
+
+/*# sourceMappingURL=navbar.css.map */

@@ -2,7 +2,6 @@ import React from 'react'
 import EmailForm from '../EmailForm'
 import Navbar from '../Sidebar/Navbar'
 import './index.scss'
-import ImageAnimation from '../Logo'
 
 export const Contact = () => {
     return (
@@ -10,13 +9,12 @@ export const Contact = () => {
             <Navbar />
             <div className='animate__animated animate__fadeIn   Email-page'>
                 <div className='Email'>
-                    <h1><br />Email me to know more Information <br /></h1>
-
+                    <h1><br />Inbox Open for Opportunities: Reach Out and Let's Collaborate <br /></h1>
                 </div>
                 <div className='email-des'>
-                    <p>this is some demo text to show and understant
-                        and also i am adding some text to incress new views
-                        this is some demo text to show and understant
+                    <p>
+                        Ready to turn your ideas into reality or have any questions about my work?
+                        Reach out using the contact form below. Let's create something extraordinary together! Your message is just a click away.
                     </p>
                 </div>
             </div>

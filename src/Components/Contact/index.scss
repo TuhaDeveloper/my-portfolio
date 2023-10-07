@@ -6,8 +6,8 @@
 
 .Email {
     color: yellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: .5rem;
-
 
     ::before {
         content: '<h1>';
@@ -25,7 +25,8 @@
 }
 
 .email-des p {
-    color: white;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: .5rem;
     width: 50%;
 }

@@ -6,32 +6,60 @@
 
 .about h1 {
     color: yellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Times New Roman', Times, serif;
-
-
 }
 
 .about-tag {
     ::before {
-        content: '<h1>';
+        content: '< h1 >';
         font-family: 'Courier New', Courier, monospace;
         font-size: small;
     }
 
     ::after {
-        content: '</h1>';
+        content: '</ h1 >';
         font-family: 'Courier New', Courier, monospace;
         font-size: small;
     }
 }
 
-.about p {
-    color: white;
-    width: 45%;
+.about-des p {
+    color: black;
+    font-weight: 500;
 }
 
 .about-des {
-    height: 60px;
+    height: auto;
+
+}
+
+.about-des h2 {
+    color: yellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.about-des strong {
+    color: rgb(255, 216, 40);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.about-des .intro p {
+    font-size: large;
+    color: rgb(3, 42, 48);
+}
+
+.about-des .des-footer p {
+    color: lightcyan;
+}
+
+.portfolio-link {
+    color: black;
+    font-weight: bold;
+    padding: 2 5px;
+    text-decoration: underline;
 }
 
 @media screen and (max-width:820px) {
@@ -42,11 +70,13 @@
     }
 }
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:650px) {
     .about-page {
-        left: 0;
+        left: 15%;
+
     }
 }
+
 
 @media screen and (max-width:540px) {
     .about-page {
@@ -64,5 +94,26 @@
     }
 
 
+}
 
+@media screen and (max-width:450px) {
+    .about-page {
+        left: 20%;
+
+    }
+
+    .about-des {
+        font-size: small;
+
+        .intro p {
+            font-size: small;
+        }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .about-page {
+        left: 5%;
+
+    }
 }

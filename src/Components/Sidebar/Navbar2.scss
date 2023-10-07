@@ -22,4 +22,10 @@
         display: block;
     }
 
+    a.active {
+        svg {
+            color: blue
+        }
+    }
+
 }

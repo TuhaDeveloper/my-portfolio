@@ -1,0 +1,40 @@
+.projects {
+    margin-left: 5%;
+}
+
+.projects h1 {
+    text-align: center;
+    margin-top: 5%;
+    color: yellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.card-component {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-component a {
+    margin-left: 2%;
+}
+
+
+@media screen and (max-width:490px) {
+    .projects h1 {
+        font-size: large;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .projects h1 {
+        font-size: large;
+    }
+
+    .card-component a {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}

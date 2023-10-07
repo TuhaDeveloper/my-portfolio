@@ -38,9 +38,8 @@ const EmailForm = () => {
 
     return (
         <div className='formdiv animate__animated animate__fadeIn'>
-            {/* <h2>Give Your Information to get better service</h2> */}
-            <form onSubmit={handleSubmit}>
 
+            <form onSubmit={handleSubmit}>
                 <input type="text" required className='email-input' value={senderName} onChange={(e) => setSenderName(e.target.value)} placeholder="Your Name" />
                 <input type="email" required className='email-input' value={senderEmail} onChange={(e) => setSenderEmail(e.target.value)} placeholder="Your Email" />
                 <input type="email" className='recipt-input' value={recipientEmail} onChange={(e) => setRecipientEmail(e.target.value)} placeholder="Recipient's Email" />

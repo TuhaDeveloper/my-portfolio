@@ -41,7 +41,16 @@
 }
 
 
+@media screen and (max-width:450px) {
+    .page {
+        margin-left: -10%;
+    }
+}
+
 @media screen and (max-width:350px) {
+    .page {
+        margin-left: -10%;
+    }
 
     .navbar {
         display: block;

@@ -1,0 +1,59 @@
+.project {
+    margin-top: 5%;
+    width: 350px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+    box-shadow: 4px 8px 8px black;
+    transition: all .4s;
+    margin-left: 2%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.project:hover {
+    scale: 1.1;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+img:hover {
+    opacity: .2;
+}
+
+
+@media screen and (max-width:900px) {
+    .project {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width:698px) {
+    .project {
+        width: 200px;
+        height: 200px;
+        margin-left: 17%;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .project {
+        width: 150px;
+        height: 150px;
+        margin-left: 30%;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    .project {
+        width: 80%;
+        margin: .5rem auto;
+    }
+
+}

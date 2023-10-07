@@ -16,6 +16,8 @@ export const Contact = () => {
                         Ready to turn your ideas into reality or have any questions about my work?
                         Reach out using the contact form below. Let's create something extraordinary together! Your message is just a click away.
                     </p>
+                    <p>Email: jahid2005tuha@gmail.com</p>
+                    <p>Phone: +8801986934584</p>
                 </div>
             </div>
             <div className='email-form'>

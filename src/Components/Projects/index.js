@@ -9,6 +9,7 @@ import Nclone from '../../images/Netflix.JPG'
 import APiPage from '../../images/Api.JPG'
 import Sclone from '../../images/spotify.JPG'
 import portfolio from '../../images/portfolio.JPG'
+import Myportfolio from '../../images/myportfolio.JPG'
 import { Link } from 'react-router-dom'
 
 const Projects = () => {
@@ -23,6 +24,9 @@ const Projects = () => {
                 <div className='card-component'>
                     <Link to='https://clone-882e0.web.app/' rel="noopener noreferrer" >
                         <Card imageUrl={Yclone} />
+                    </Link>
+                    <Link to='https://tohaportfolio.web.app'>
+                        <Card imageUrl={Myportfolio} />
                     </Link>
                     <Link to='https://instagram-clone-react-2005.web.app/'>
                         <Card imageUrl={Wclone} />
